@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Games Arena</title>
+  <!-- ? google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&family=Days+One&display=swap"
+    rel="stylesheet">
+  <!-- ? favicon -->
+  <link rel="icon" href="imgs/favicon.png">
+  <!-- ? font awesome -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- ? bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- ? main stylesheet -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- ? media queries -->
+  <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true"
+  class="scrollspy-example bg-body-tertiary " tabindex="0">
+  <!-- ? navbar -->
+  <nav id="navbar"
+    class="navbar navbar-expand-lg text-light bg-dark align-items-center py-0 fixed-top border-bottom border-gray-800">
+    <div class="container-fluid px-4 py-3 d-flex gap-3">
+      <a class="navbar-brand logo text-accent fw-700 d-flex gap-3" href="#">
+        <i class="fa-solid fa-gamepad"></i>
+        <h1 class="fw-700 mb-0">GameArena</h1>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars text-light"></i>
+      </button>
+      <div class="navbar-nav collapse navbar-collapse mb-0 align-items-stretch justify-content-lg-between"
+        id="navbarNavAltMarkup">
+        <ul class="nav nav-pills list-unstyled d-flex flex-column flex-lg-row mb-lg-0">
+          <li class="nav-item mb-3 mb-lg-0"><a class="nav-link active" aria-current="page" href="#hero">Home</a></li>
+          <li class="nav-item mb-3 mb-lg-0"><a class="nav-link" href="#games">OUR GAMES</a></li>
+          <li class="nav-item mb-3 mb-lg-0"><a class="nav-link" href="#we-do">What We Do</a></li>
+          <li class="nav-item mb-3 mb-lg-0"><a class="nav-link" href="#team">Our Team</a></li>
+          <li class="nav-item mb-3 mb-lg-0"><a class="nav-link d-lg-none" href="#team">Tournaments</a></li>
+          <li class="nav-item mb-3 mb-lg-0"><a class="nav-link" href="#contact">Contact Us</a></li>
+        </ul>
+        <div
+          class="actions d-flex align-items-start align-items-lg-center nav-link flex-column flex-lg-row p-0 gap-3 text-light me-lg-3">
+          <div class="nav-item" role="button">
+            <i class="fa-regular fa-bell text-light me-2 me-lg-0"></i>
+            <span class="d-lg-none">Notifications</span>
+          </div>
+          <div class="nav-item" role="button">
+            <i class="fa-regular fa-message text-light me-2 me-lg-0"></i>
+            <span class="d-lg-none">Messages</span>
+          </div>
+          <button class="sign-in btn-shine btn bg-accent text-black fw-700 px-4 align-self-stretch">Sign In</button>
+        </div>
+      </div>
+    </div>
+
+  </nav>
+
+  <main>
+    <!-- ? hero section -->
+    <section id="hero" class="hero min-vh-100 pb-16 pt-30 d-flex justify-content-center align-items-center">
+      <div class="container-fluid px-3 px-md-4">
+        <div class="row gap-5 gap-lg-0 g-lg-5 align-items-center">
+          <div class="content col-12 col-lg-6 text-center text-lg-start">
+            <h2 class="days-one text-light mb-3 mb-lg-4 fs-sm-48 fs-lg-60">THE ULTIMATE<span
+                class="text-accent d-block"> GAMING
+              </span>EXPERIENCE</h2>
+            <p class="fs-12 mb-4 mb-lg-32 fs-sm-16">
+              Join millions of gamers worldwide in the most competitive eSports tournaments. Experience next-level
+              gaming with
+              cutting-edge technology and endless possibilities.
+            </p>
+            <div class="d-flex flex-column flex-sm-row gap-2 gap-sm-3 justify-content-center justify-content-lg-start">
+              <button class="btn-shine btn py-lg-3 px-lg-32 bg-accent text-black px-4 py-12 fs-12 fw-700 fs-sm-16">Start
+                Gaming Now</button>
+              <button
+                class="btn-shine btn py-lg-3 px-lg-32 bg-transparent text-accent px-4 py-12 fs-12 fw-700 border border-2 border-accent watch fs-sm-16">Watch
+                Tournaments</button>
+            </div>
+          </div>
+          <div class="hero-img col-12 col-lg-6">
+            <div class="img-wrapper p-1 rounded-4 position-relative">
+              <img class="object-fit-cover w-100 h-hero-img h-sm-hero-img" src="imgs/imgi_1_hero-img-C0b4IWtS.png"
+                alt="A desktop setup">
+              <div
+                class="active-players bg-dark rounded-3 position-absolute p-3 p-sm-4 border border-secondary border border-gray-700 d-flex align-items-center">
+                <i class="fa-solid fa-trophy text-accent me-2 fs-sm-20"></i>
+                <div>
+                  <div class="text-dark fs-12">Active Players</div>
+                  <div class="text-light fw-700 fs-sm-20">2.5M+</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ? games section -->
+    <section id="games" class="games bg-dark">
+      <div class="container-fluid px-md-4">
+        <div class="sec-title mb-42">
+          <h2 class="text-uppercase fs-12 fs-md-16 fw-700 text-accent text-center mx-auto mb-3">our games</h2>
+          <p class="text-center text-light days-one fs-1">Our Latest Games</p>
+        </div>
+        <div id="carousel" class="carousel slide d-flex flex-column gap-4">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="d-md-flex gap-md-4">
+                <div class="rounded-4 overflow-hidden position-relative aspect-ratio-square" role="button">
+                  <img src="imgs/imgi_2_latest-games-1-CfV33bjK.png" class="d-block w-100 object-fit-cover" alt="...">
+                  <div class="position-absolute tags ">
+                    <spsn
+                      class="rounded-pill fs-12 text-light text-uppercase fw-700 bg-black bg-opacity-25 px-2 py-1 me-1">
+                      <i class="fa-solid fa-gamepad text-accent me-1"></i> ADVENTURE
+                    </spsn>
+                    <span
+                      class="rounded-pill fs-12 text-light text-uppercase fw-700 bg-black bg-opacity-25 px-2 py-1"><i
+                        class="fa-solid fa-users text-accent me-1"></i> MULTIPLAYER</span>
+                  </div>
+                  <div class="overlay position-absolute"></div>
+                  <div class="title text-black fs-6 fs-md-18 position-absolute fw-700 fs-md-18">Alien Companions</div>
+                </div>
+                <div class="rounded-4 overflow-hidden position-relative d-none d-md-block aspect-ratio-square" role="button">
+                  <img src="imgs/imgi_3_latest-games-2-DcGt1MOH.png" class="d-block w-100 object-fit-cover" alt="...">
+                  <div class="position-absolute tags ">
+                    <spsn
+                      class="rounded-pill fs-12 text-light text-uppercase fw-700 bg-black bg-opacity-25 px-2 py-1 me-1">
+                      <i class="fa-solid fa-flag-checkered text-accent me-1"></i> RACING
+                    </spsn>
+                    <span
+                      class="rounded-pill fs-12 text-light text-uppercase fw-700 bg-black bg-opacity-25 px-2 py-1"><i
+                        class="fa-solid fa-bolt text-accent me-1"></i> SCI-FI</span>
+                  </div>
+                  <div class="overlay position-absolute"></div>
+                  <div class="title text-black fs-6 fs-md-18 position-absolute fw-700 fs-md-18">Cyber Run 2099</div>
+                </div>
+                <div class="rounded-4 overflow-hidden position-relative d-none d-lg-block aspect-ratio-square" role="button">
+                  <img src="imgs/imgi_4_latest-games-3-3PuaZ95E.png" class="d-block w-100 object-fit-cover" alt="...">
+                  <div class="position-absolute tags ">
+                    <spsn
+                      class="rounded-pill fs-12 text-light text-uppercase fw-700 bg-black bg-opacity-25 px-2 py-1 me-1">
+                      <i class="fa-brands fa-discord text-accent me-1"></i> ACTION
+                    </spsn>
+                    <span
+                      class="rounded-pill fs-12 text-light text-uppercase fw-700 bg-black bg-opacity-25 px-2 py-1"><i
+                        class="fa-solid fa-microchip text-accent me-1"></i> GEFORCE</span>
+                  </div>
+                  <div class="overlay position-absolute"></div>
+                  <div class="title text-black fs-6 fs-md-18 position-absolute fw-700 fs-md-18 pe-3">The Legend of
+                    Zelda: Tears
+                    of the Kingdom</div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div class="d-md-flex gap-md-4">
+                <div class="rounded-4 overflow-hidden position-relative aspect-ratio-square" role="button">
+                  <img src="imgs/imgi_5_latest-games-4-DCWGKdgP.png" class="d-block w-100 object-fit-cover" alt="...">
+                  <div class="position-absolute tags ">
+                    <spsn
+                      class="rounded-pill fs-12 text-light text-uppercase fw-700 bg-black bg-opacity-25 px-2 py-1 me-1">
+                      <i class="fa-solid fa-shield-halved text-accent me-1"></i> RPG
+                    </spsn>
+                    <span
+                      class="rounded-pill fs-12 text-light text-uppercase fw-700 bg-black bg-opacity-25 px-2 py-1"><i
+                        class="fa-solid fa-wand-magic-sparkles text-accent me-1"></i> FANTASY</span>
+                  </div>
+                  <div class="overlay position-absolute"></div>
+                  <div class="title text-black fs-6 fs-md-18 position-absolute fw-700 fs-md-18">Aetheria Chronicles
+                  </div>
+                </div>
+                <div class="rounded-4 overflow-hidden position-relative d-none d-md-block aspect-ratio-square" role="button">
+                  <img src="imgs/imgi_6_latest-games-5-D0uhM4CW.png" class="d-block w-100 object-fit-cover" alt="...">
+                  <div class="position-absolute tags ">
+                    <spsn
+                      class="rounded-pill fs-12 text-light text-uppercase fw-700 bg-black bg-opacity-25 px-2 py-1 me-1">
+                      <i class="fa-solid fa-crosshairs text-accent me-1"></i> SHOOTER
+                    </spsn>
+                    <span
+                      class="rounded-pill fs-12 text-light text-uppercase fw-700 bg-black bg-opacity-25 px-2 py-1"><i
+                        class="fa-solid fa-user-group text-accent me-1"></i> CO-OP</span>
+                  </div>
+                  <div class="overlay position-absolute"></div>
+                  <div class="title text-black fs-6 fs-md-18 position-absolute fw-700 fs-md-18">Warfront Protocol</div>
+                </div>
+                <div class="rounded-4 overflow-hidden position-relative d-none d-lg-block aspect-ratio-square" role="button">
+                  <img src="imgs/imgi_7_latest-games-6-CJaIm3nW.png" class="d-block w-100 object-fit-cover" alt="...">
+                  <div class="position-absolute tags ">
+                    <spsn
+                      class="rounded-pill fs-12 text-light text-uppercase fw-700 bg-black bg-opacity-25 px-2 py-1 me-1">
+                      <i class="fa-solid fa-dragon text-accent me-1"></i> FOOTBALL
+                    </spsn>
+                    <span
+                      class="rounded-pill fs-12 text-light text-uppercase fw-700 bg-black bg-opacity-25 px-2 py-1"><i
+                        class="fa-solid fa-star text-accent me-1"></i> FANTASY</span>
+                  </div>
+                  <div class="overlay position-absolute"></div>
+                  <div class="title text-black fs-6 fs-md-18 position-absolute fw-700 fs-md-18">Shot Striker</div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div class="d-md-flex gap-md-4">
+                <div class="rounded-4 overflow-hidden position-relative aspect-ratio-square" role="button">
+                  <img src="imgs/imgi_8_latest-games-7-C9aSwQWa.png" class="d-block w-100 object-fit-cover" alt="...">
+                  <div class="position-absolute tags ">
+                    <spsn
+                      class="rounded-pill fs-12 text-light text-uppercase fw-700 bg-black bg-opacity-25 px-2 py-1 me-1">
+                      <i class="fa-solid fa-trophy text-accent me-1"></i> SPORTS
+                    </spsn>
+                    <span
+                      class="rounded-pill fs-12 text-light text-uppercase fw-700 bg-black bg-opacity-25 px-2 py-1"><i
+                        class="fa-solid fa-fire"></i> LEAGUE</span>
+                  </div>
+                  <div class="overlay position-absolute"></div>
+                  <div class="title text-black fs-6 fs-md-18 position-absolute fw-700 fs-md-18">Epic Gaming League</div>
+                </div>
+                <div class="rounded-4 overflow-hidden position-relative d-none d-md-block aspect-ratio-square" role="button">
+                  <img src="imgs/imgi_9_latest-games-8-CDS2WV4Q.png" class="d-block w-100 object-fit-cover" alt="...">
+                  <div class="position-absolute tags ">
+                    <spsn
+                      class="rounded-pill fs-12 text-light text-uppercase fw-700 bg-black bg-opacity-25 px-2 py-1 me-1">
+                      <i class="fa-solid fa-rocket text-accent me-1"></i> SPACE
+                    </spsn>
+                    <span
+                      class="rounded-pill fs-12 text-light text-uppercase fw-700 bg-black bg-opacity-25 px-2 py-1"><i
+                        class="fa-solid fa-globe text-accent me-1"></i> EXPLORATION</span>
+                  </div>
+                  <div class="overlay position-absolute"></div>
+                  <div class="title text-black fs-6 fs-md-18 position-absolute fw-700 fs-md-18">Barren alien worlds
+                  </div>
+                </div>
+                <div class="rounded-4 overflow-hidden position-relative d-none d-lg-block aspect-ratio-square" role="button">
+                  <img src="imgs/imgi_10_latest-games-9-BhBeVXRH.png" class="d-block w-100 object-fit-cover" alt="...">
+                  <div class="position-absolute tags ">
+                    <spsn
+                      class="rounded-pill fs-12 text-light text-uppercase fw-700 bg-black bg-opacity-25 px-2 py-1 me-1">
+                      <i class="fa-solid fa-hat-wizard text-accent me-1"></i> ACTION
+                    </spsn>
+                    <span
+                      class="rounded-pill fs-12 text-light text-uppercase fw-700 bg-black bg-opacity-25 px-2 py-1"><i
+                        class="fa-solid fa-dungeon text-accent me-1"></i> FUTURISTIC</span>
+                  </div>
+                  <div class="overlay position-absolute"></div>
+                  <div class="title text-black fs-6 fs-md-18 position-absolute fw-700 fs-md-18">Cloveland Quest</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center gap-4">
+            <div class="d-flex gap-3">
+              <button class="carousel-control-prev rounded-circle border border-2 border-gray-400" type="button"
+                data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="" aria-hidden="true"><i class="fa-solid fa-arrow-left"></i></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next rounded-circle border border-2 border-gray-400" type="button"
+                data-bs-target="#carousel" data-bs-slide="next">
+                <span class="" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <button
+              class="btn-shine btn py-lg-3 px-lg-32 bg-transparent text-accent px-4 py-12 fs-12 fw-700 border border-2 border-accent view-games fs-sm-16 align-self-stretch">VIEW
+              ALL GAMES</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ? we do section -->
+    <section id="we-do" class="we-do pt-sm-60 pt-md-96 bg-dark">
+      <div class="container-fluid px-md-4">
+        <div class="sec-title mb-42">
+          <h2 class="text-uppercase fs-12 fs-md-16 fw-700 text-accent text-center mx-auto mb-3">WHAT WE DO</h2>
+          <p class="text-center text-light days-one fs-1 mb-0">More Than Just Games</p>
+          <p class="text-light fs-1 fw-700 text-center">We Build <span class="text-accent">Interactive</span> Journeys
+          </p>
+        </div>
+
+        <div class="content gap-3 gap-lg-4">
+          <div
+            class="aspect-ratio-square p-3 rounded-4 d-flex justify-content-center align-items-center flex-column position-relative card-bg border border-gray-800 text-light fw-700 days-one">
+            <div class="icon bg-gray-800 rounded-3 d-flex justify-content-center align-items-center mb-3"><i
+                class="fa-solid fa-desktop text-accent"></i></div>
+            <h3 class="fw-700 fs-6 fs-md-20 text-center">
+              PC Game<br>Development
+            </h3>
+          </div>
+
+          <div
+            class="aspect-ratio-square p-3 rounded-4 d-flex justify-content-center align-items-center flex-column position-relative card-bg border border-gray-800 text-light fw-700 days-one">
+            <div class="icon bg-gray-800 rounded-3 d-flex justify-content-center align-items-center mb-3"><i
+                class="fa-solid fa-mobile-screen-button text-accent"></i></div>
+            <h3 class="fw-700 fs-6 fs-md-20 text-center">
+              Mobile Game <br>Development
+            </h3>
+          </div>
+
+          <div class="aspect-ratio-square img-wrapper rounded-4 overflow-hidden">
+            <img src="imgs/imgi_11_what-we-do-1-DuZnkwGW.png" alt="">
+          </div>
+
+          <div
+            class="aspect-ratio-square p-3 rounded-4 d-flex justify-content-center align-items-center flex-column position-relative card-bg border border-gray-800 text-light fw-700 days-one">
+            <div class="icon bg-gray-800 rounded-3 d-flex justify-content-center align-items-center mb-3"><i
+                class="fa-solid fa-vr-cardboard text-accent"></i></div>
+            <h3 class="fw-700 fs-6 fs-md-20 text-center">
+              AR/VR<br>Solutions
+            </h3>
+          </div>
+
+          <div
+            class="aspect-ratio-square p-3 rounded-4 d-flex justify-content-center align-items-center flex-column position-relative card-bg border border-gray-800 text-light fw-700 days-one">
+            <div class="icon bg-gray-800 rounded-3 d-flex justify-content-center align-items-center mb-3"><i
+                class="fa-solid fa-cubes text-accent"></i></div>
+            <h3 class="fw-700 fs-6 fs-md-20 text-center">
+              AR/VR<br>Design
+            </h3>
+          </div>
+
+          <div class="aspect-ratio-square img-wrapper rounded-4 overflow-hidden">
+            <img src="imgs/imgi_12_what-we-do-2-DVAo6agz.png" alt="">
+          </div>
+
+          <div
+            class="aspect-ratio-square p-3 rounded-4 d-flex justify-content-center align-items-center flex-column position-relative card-bg border border-gray-800 text-light fw-700 days-one">
+            <div class="icon bg-gray-800 rounded-3 d-flex justify-content-center align-items-center mb-3"><i
+                class="fa-brands fa-playstation text-accent"></i></div>
+            <h3 class="fw-700 fs-6 fs-md-20 text-center">
+              PS4 Game
+              <br>Development
+            </h3>
+          </div>
+
+          <div
+            class="aspect-ratio-square p-3 rounded-4 d-flex justify-content-center align-items-center flex-column position-relative card-bg border border-gray-800 text-light fw-700 days-one">
+            <div class="icon bg-gray-800 rounded-3 d-flex justify-content-center align-items-center mb-3"><i
+                class="fa-solid fa-cube text-accent"></i></div>
+            <h3 class="fw-700 fs-6 fs-md-20 text-center">
+              3D
+              <br>Modelings
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+
+
+
+
+
+
+
+  <!-- ? bootstrap js -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

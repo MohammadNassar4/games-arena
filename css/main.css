@@ -1,0 +1,433 @@
+/* ? normalization */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ? custom properties */
+:root {
+  --spacing: .25rem;
+  --accent-color: #c6ff3b;
+  --bg-dark: #0b0e13;
+  --text-light: #f1f1f1;
+  --text-dark: #99a1af;
+  --gray-800: #1e2939;
+  --gray-700: #364153;
+  --card-bg: #1A1A1A;
+}
+
+/* ? general styles */
+::selection {
+  background-color: var(--accent-color);
+  color: var(--bg-dark);
+}
+
+body {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  background-image: linear-gradient(rgba(0, 0, 0, .88)), url(../imgs/body-img.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+a {
+  text-decoration: none;
+  color: inherit !important;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 1.25rem;
+}
+
+/* ? general classes */
+.container-fluid {
+  max-width: 80rem;
+}
+
+.py-12 {
+  padding-block: calc(var(--spacing) * 3);
+}
+
+.pb-16 {
+  padding-bottom: calc(var(--spacing) * 16);
+}
+
+.pt-30 {
+  padding-top: calc(var(--spacing) * 30);
+}
+
+.mb-42 {
+  margin-bottom: calc(var(--spacing) * 10.5);
+}
+
+.bg-dark {
+  background-color: var(--bg-dark) !important;
+}
+
+.text-light {
+  color: var(--text-light) !important;
+}
+
+.text-dark {
+  color: var(--text-dark) !important;
+}
+
+.text-black {
+  color: var(--bg-dark) !important;
+}
+
+.text-accent {
+  color: var(--accent-color) !important;
+}
+
+.bg-accent {
+  background-color: var(--accent-color) !important;
+}
+
+.border-accent {
+  border-color: var(--accent-color) !important;
+}
+
+.card-bg {
+  background-color: var(--card-bg);
+}
+
+.bg-gray-800 {
+  background-color: var(--gray-800);
+}
+
+.border-gray-400 {
+  border-color: #99a1af !important;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.days-one {
+  font-family: "Days One", sans-serif;
+  font-weight: 700;
+}
+
+.fs-12 {
+  font-size: .75rem;
+}
+
+.aspect-ratio-square {
+  aspect-ratio: 1;
+}
+
+.h-hero-img {
+  height: calc(var(--spacing) * 56);
+}
+
+.sec-title h2 {
+  position: relative;
+  width: fit-content;
+
+  &::before,
+  &::after {
+    content: '';
+    width: 64px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: linear-gradient(to left, var(--accent-color), #c7ff3b00);
+  }
+
+  &::before {
+    left: -80px;
+  }
+
+  &::after {
+    right: -80px;
+    background-image: linear-gradient(to right, var(--accent-color), #c7ff3b00);
+  }
+}
+
+/* ? button shine effect */
+.btn-shine {
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    opacity: .9;
+  }
+}
+
+.border-gray-800 {
+  border-color: var(--gray-800) !important;
+}
+
+.border-gray-700 {
+  border-color: var(--gray-700) !important;
+}
+
+.btn-shine::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.4) 50%,
+      rgba(255, 255, 255, 0) 100%);
+  transition: .8s;
+}
+
+.btn-shine:hover::before {
+  left: 125%;
+}
+
+/* ? scrollspy */
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  color: var(--accent-color) !important;
+  background-color: transparent;
+}
+
+/*?=============================================
+=            Start of navbar            =
+=============================================*/
+nav {
+
+  .navbar-toggler:focus {
+    box-shadow: 0 0 0 transparent;
+  }
+
+  .nav-item {
+    &:hover {
+      color: var(--accent-color);
+    }
+  }
+
+  .action>div:hover {
+    color: red;
+  }
+}
+
+
+
+/* ?=====  End of navbar  ====== */
+
+
+/*?=============================================
+=            Start of Hero            =
+=============================================*/
+.hero {
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    color: #d1d5dc;
+  }
+
+  .watch {
+    &:hover {
+      background-color: var(--accent-color) !important;
+      color: var(--bg-dark) !important;
+    }
+  }
+
+  .hero-img {
+
+    .img-wrapper {
+      background-image: linear-gradient(to right, var(--accent-color), #06df72);
+
+      img {
+        border-radius: .75rem;
+        object-position: center;
+      }
+
+      .active-players {
+        left: -16px;
+        bottom: -16px;
+      }
+    }
+
+  }
+}
+
+
+/*?=====  End of Hero  ======*/
+
+
+/*?=============================================
+=            Section games            =
+=============================================*/
+.games {
+  padding-block: 56px;
+  .carousel-item {
+    >div>div {
+      border: 2px solid #c6ff3b00;
+      transition: .3s;
+
+      &:hover {
+        border-color: var(--accent-color);
+      }
+
+      img {
+        transition: .3s;
+      }
+
+      &:hover img {
+        scale: 1.1;
+      }
+
+      &:hover .tags {
+        top: 10px;
+      }
+
+      .tags {
+        top: -50px;
+        left: 8px;
+        transition: all .3s;
+        backdrop-filter: blur(10px);
+      }
+
+      &:hover .overlay {
+        opacity: 1;
+      }
+
+      .overlay {
+        height: 66%;
+        width: 100%;
+        bottom: 0;
+        background-image: linear-gradient(to top, #cbfe1ccc, #cbfe1c00);
+        opacity: 0;
+        transition: all .3s;
+      }
+
+      &:hover .title {
+        bottom: 24px;
+      }
+
+      .title {
+        bottom: -50px;
+        left: 24px;
+        transition: all .3s;
+      }
+    }
+  }
+
+  .carousel-control-next,
+  .carousel-control-prev {
+    position: static;
+    width: 44px;
+    height: 44px;
+  }
+
+  .view-games {
+    &:hover {
+      background-color: var(--accent-color) !important;
+      color: var(--bg-dark) !important;
+    }
+  }
+
+.carousel {
+  >div:nth-child(2) {
+    >div:first-child {
+      button {
+        transition: .3s;
+        &:hover {
+          border-color: var(--accent-color) !important;
+        }
+
+        i {
+          transition: .3s;
+        }
+        &:hover i {
+          color: var(--accent-color);
+        }
+      }
+    }
+  }
+}
+}
+/* ?=====  End of Section games  ====== */
+
+/* ? we do section */
+.we-do {
+  padding-block: 56px 42px;
+
+  .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    >div:not(.img-wrapper) {
+      overflow: hidden;
+      transition: .3s;
+
+      &:hover .icon {
+        background-color: var(--accent-color);
+      }
+
+      &:hover .icon i {
+        color: var(--bg-dark) !important;
+      }
+
+      &:hover {
+        border-color: var(--accent-color) !important;
+      }
+
+      &:hover::before {
+        bottom: 0;
+        right: 0;
+      }
+
+      &:hover::after {
+        top: 0;
+        left: 0;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        border: 18px solid transparent;
+        border-right-color: var(--accent-color);
+        rotate: 225deg;
+        bottom: calc(var(--spacing) * -10);
+        right: calc(var(--spacing) * -10);
+        transition: .3s;
+      }
+      
+      &::after {
+        content: '';
+        width: 0;
+        height: 0;
+        position: absolute;
+        border: 18px solid transparent;
+        border-right-color: var(--accent-color);
+        rotate: 45deg;
+        top: -45px;
+        left: -40px;
+        transition: .3s;
+      }
+
+    }
+    .icon {
+      height: 42px;
+      width: 42px;
+      transition: .3s;
+      
+      i {
+        transition: .3s;
+      }
+    }
+  }
+}

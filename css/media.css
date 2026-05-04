@@ -1,0 +1,109 @@
+/*? sm */
+@media (min-width: 576px) {
+
+  .fs-sm-16 {
+    font-size: 1rem !important;
+  }
+
+  .fs-sm-48 {
+    font-size: 3rem !important;
+  }
+
+  .fs-sm-20 {
+    font-size: 1.25rem;
+  }
+
+  .pt-sm-60 {
+    padding-top: 60px;
+  }
+
+  .h-sm-hero-img {
+    height: calc(var(--spacing) * 75);
+  }
+}
+
+/*? md */
+@media (min-width: 768px) {
+
+  .fs-md-16 {
+    font-size: 1rem;
+  }
+
+  .fs-md-18 {
+    font-size: 1.125rem !important;
+  }
+
+  .fs-md-20 {
+    font-size: 1.25rem !important;
+  }
+
+  .pt-md-96 {
+    padding-top: 96px;
+  }
+
+  .h-sm-hero-img {
+    height: calc(var(--spacing) * 96);
+  }
+
+    .we-do {
+  
+      .content {
+  
+        .icon {
+          height: 64px;
+          width: 64px;
+
+          i {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+}
+
+/*? lg */
+@media (min-width: 992px) {
+  .fs-lg-60 {
+    font-size: 3.75rem !important;
+  }
+
+  .mb-lg-32 {
+    margin-bottom: 2rem !important;
+  }
+
+  .px-lg-32 {
+    padding-inline: 2rem !important;
+  }
+
+  .hero .hero-img .img-wrapper .active-players {
+    left: -24px;
+    bottom: -24px;
+  }
+
+  .games {
+    .carousel-control-next,
+      .carousel-control-prev {
+        width: 56px;
+        height: 56px;
+      }
+  }
+
+    .we-do {
+      padding-block: 56px 42px;
+  
+      .content {
+        grid-template-columns: repeat(4, 1fr);
+  
+      }
+    }
+}
+
+/*? xl */
+@media (min-width: 1200px) {}
+
+/*? xxl */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 80rem;
+  }
+}
