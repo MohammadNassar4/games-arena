@@ -5,12 +5,16 @@
     font-size: 1rem !important;
   }
 
+  .fs-sm-19 {
+    font-size: 1.1875rem;
+  }
+  
+    .fs-sm-20 {
+      font-size: 1.25rem;
+    }
+
   .fs-sm-48 {
     font-size: 3rem !important;
-  }
-
-  .fs-sm-20 {
-    font-size: 1.25rem;
   }
 
   .pt-sm-60 {
@@ -20,6 +24,12 @@
   .h-sm-hero-img {
     height: calc(var(--spacing) * 75);
   }
+
+    .team {
+      .member {
+        height: 300px;
+      }
+    }
 }
 
 /*? md */
@@ -45,20 +55,31 @@
     height: calc(var(--spacing) * 96);
   }
 
-    .we-do {
-  
-      .content {
-  
-        .icon {
-          height: 64px;
-          width: 64px;
+  .we-do {
 
-          i {
-            font-size: 1.5rem;
-          }
+    .content {
+
+      .icon {
+        height: 64px;
+        width: 64px;
+
+        i {
+          font-size: 1.5rem;
         }
       }
     }
+  }
+
+  .sponsor-card {
+    width: 96px;
+    height: 96px;
+  }
+
+            .team {
+              .member {
+                height: 320px;
+              }
+            }
 }
 
 /*? lg */
@@ -81,21 +102,26 @@
   }
 
   .games {
+
     .carousel-control-next,
-      .carousel-control-prev {
-        width: 56px;
-        height: 56px;
-      }
+    .carousel-control-prev {
+      width: 56px;
+      height: 56px;
+    }
   }
 
-    .we-do {
-      padding-block: 56px 42px;
-  
-      .content {
-        grid-template-columns: repeat(4, 1fr);
-  
-      }
+  .we-do {
+    padding-block: 56px 42px;
+
+    .content {
+      grid-template-columns: repeat(4, 1fr);
+
     }
+  }
+
+  .team {
+    padding-block: 96px;
+  }
 }
 
 /*? xl */

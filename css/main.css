@@ -123,6 +123,14 @@ h1 {
   font-size: .75rem;
 }
 
+.fs-14 {
+  font-size: .875rem;
+}
+
+.fs-18 {
+  font-size: 1.125rem;
+}
+
 .aspect-ratio-square {
   aspect-ratio: 1;
 }
@@ -272,6 +280,7 @@ nav {
 =============================================*/
 .games {
   padding-block: 56px;
+
   .carousel-item {
     >div>div {
       border: 2px solid #c6ff3b00;
@@ -339,26 +348,29 @@ nav {
     }
   }
 
-.carousel {
-  >div:nth-child(2) {
-    >div:first-child {
-      button {
-        transition: .3s;
-        &:hover {
-          border-color: var(--accent-color) !important;
-        }
-
-        i {
+  .carousel {
+    >div:nth-child(2) {
+      >div:first-child {
+        button {
           transition: .3s;
-        }
-        &:hover i {
-          color: var(--accent-color);
+
+          &:hover {
+            border-color: var(--accent-color) !important;
+          }
+
+          i {
+            transition: .3s;
+          }
+
+          &:hover i {
+            color: var(--accent-color);
+          }
         }
       }
     }
   }
 }
-}
+
 /* ?=====  End of Section games  ====== */
 
 /* ? we do section */
@@ -405,7 +417,7 @@ nav {
         right: calc(var(--spacing) * -10);
         transition: .3s;
       }
-      
+
       &::after {
         content: '';
         width: 0;
@@ -420,14 +432,117 @@ nav {
       }
 
     }
+
     .icon {
       height: 42px;
       width: 42px;
       transition: .3s;
-      
+
       i {
         transition: .3s;
       }
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 80%;
+    max-width: 600px;
+    height: 2px;
+    background-image: linear-gradient(90deg, transparent, var(--accent-color) 20% 80%, transparent);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 10px var(--accent-color), 0 0 20px #cbfe1c4d;
+  }
+}
+
+/* ? sponsors section */
+.sponsors {
+  padding-block: 70px;
+  background-image: radial-gradient(#c9fe1cb9 10% 20%, var(--bg-dark) 70%);
+
+  .animation {
+    .ribbon {
+
+      .inner {
+        >div {
+          animation: slide-left 50s infinite linear;
+        }
+      }
+
+      .fade-left,
+      .fade-right {
+        width: calc(var(--spacing) * 32);
+        height: 100%;
+        background-image: linear-gradient(to right, #101828c8 20%, #10182800);
+      }
+
+      .fade-right {
+        background-image: linear-gradient(to left, #101828c8 20%, #10182800);
+      }
+    }
+
+    .ribbon-2 {
+      .inner {
+        >div {
+          animation: slide-right 50s infinite linear;
+        }
+      }
+    }
+  }
+}
+
+.sponsor-card {
+  width: 84px;
+  height: 84px;
+}
+
+@keyframes slide-left {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-1550%);
+  }
+}
+
+@keyframes slide-right {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(1550%);
+  }
+}
+
+/* ? team section */
+.team {
+  padding-block: 84px;
+
+  .member {
+    height: 280px;
+    cursor: pointer;
+
+    .info {
+      .team {
+        rotate: 90deg;
+      }
+    }
+
+    &:hover .overlay {
+      bottom: 100% !important;
+    }
+    
+    .overlay {
+      background: inherit;
+      backdrop-filter: grayscale() brightness(.9);
+      transition: .6s;
+      
+
     }
   }
 }
