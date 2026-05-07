@@ -66,12 +66,20 @@ h1 {
   padding-top: calc(var(--spacing) * 30);
 }
 
+.mb-12 {
+  margin-bottom: 12px;
+}
+
 .mb-42 {
   margin-bottom: calc(var(--spacing) * 10.5);
 }
 
 .bg-dark {
   background-color: var(--bg-dark) !important;
+}
+
+.p-28 {
+  padding: 1.75rem !important;
 }
 
 .text-light {
@@ -207,34 +215,22 @@ h1 {
   background-color: transparent;
 }
 
-/*?=============================================
-=            Start of navbar            =
-=============================================*/
+/* ? navbar */
 nav {
 
   .navbar-toggler:focus {
     box-shadow: 0 0 0 transparent;
   }
 
-  .nav-item {
-    &:hover {
-      color: var(--accent-color);
+  .nav-item,
+  .navbar-toggler {
+    &:hover * {
+      color: var(--accent-color) !important;
     }
-  }
-
-  .action>div:hover {
-    color: red;
   }
 }
 
-
-
-/* ?=====  End of navbar  ====== */
-
-
-/*?=============================================
-=            Start of Hero            =
-=============================================*/
+/* ? hero section */
 .hero {
 
   h2 {
@@ -271,13 +267,7 @@ nav {
   }
 }
 
-
-/*?=====  End of Hero  ======*/
-
-
-/*?=============================================
-=            Section games            =
-=============================================*/
+/* ? games section */
 .games {
   padding-block: 56px;
 
@@ -371,8 +361,6 @@ nav {
   }
 }
 
-/* ?=====  End of Section games  ====== */
-
 /* ? we do section */
 .we-do {
   padding-block: 56px 42px;
@@ -463,12 +451,16 @@ nav {
   padding-block: 70px;
   background-image: radial-gradient(#c9fe1cb9 10% 20%, var(--bg-dark) 70%);
 
+  .container-fluid {
+    max-width: 100%;
+  }
+
   .animation {
     .ribbon {
 
       .inner {
         >div {
-          animation: slide-left 50s infinite linear;
+          animation: slide-left 20s infinite linear;
         }
       }
 
@@ -487,7 +479,7 @@ nav {
     .ribbon-2 {
       .inner {
         >div {
-          animation: slide-right 50s infinite linear;
+          animation: slide-right 20s infinite linear;
         }
       }
     }
@@ -505,7 +497,7 @@ nav {
   }
 
   to {
-    transform: translateX(-1550%);
+    transform: translateX(-800%);
   }
 }
 
@@ -515,7 +507,7 @@ nav {
   }
 
   to {
-    transform: translateX(1550%);
+    transform: translateX(800%);
   }
 }
 
@@ -536,13 +528,121 @@ nav {
     &:hover .overlay {
       bottom: 100% !important;
     }
-    
+
     .overlay {
       background: inherit;
       backdrop-filter: grayscale() brightness(.9);
       transition: .6s;
-      
+
 
     }
+  }
+}
+
+/* ? contact section */
+.contact {
+  padding-block: 84px;
+  background-image: linear-gradient(to right, #101828, #0b0e13);
+
+  .location,
+  .phone,
+  .email {
+    background-color: #1D2939;
+    margin-bottom: 28px;
+
+    .icon {
+      width: 56px;
+      height: 56px;
+      margin-right: 21px;
+    }
+  }
+
+  .join {
+    background-image: linear-gradient(to right, var(--accent-color), #06df72);
+
+    .icon {
+      width: 42px;
+      height: 42px;
+
+      &:hover {
+        background-color: #283c21 !important;
+        cursor: pointer;
+      }
+    }
+  }
+
+  form {
+    background-color: #1D2939;
+
+    label {
+      color: #d1d5dc;
+    }
+
+    input:not(input[type='checkbox']),
+    textarea,
+    select {
+      padding: .6875rem .875rem;
+      background-color: #374052 !important;
+      border: 1px solid #4a5565;
+      outline: none;
+      transition: 0s;
+
+      &::placeholder {
+        color: #898E99;
+        font-family: "Chakra Petch", sans-serif;
+      }
+
+      &:focus {
+        border-color: transparent;
+        box-shadow: 0 0 0 2px var(--accent-color);
+      }
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    input[type='checkbox'] {
+
+      &:focus {
+        border-color: transparent;
+        box-shadow: 0 0 0 2px var(--accent-color);
+      }
+
+      &:checked {
+        border: transparent;
+        background-color: #B146C2;
+
+        &:hover {
+          background-color: #90309a;
+        }
+      }
+    }
+
+    .support {
+      margin-top: 28px;
+      padding-top: 28px;
+      border-top: 1px solid var(--gray-700);
+
+    }
+  }
+}
+
+/* ? footer */
+footer {
+  padding-block: 42px;
+
+  a:hover {
+    color: var(--accent-color) !important;
+  }
+
+  li {
+    width: fit-content;
+  }
+
+  .copyright {
+    margin-top: 28px;
+    padding-top: 28px;
+    border-top: 1px solid var(--gray-800);
   }
 }

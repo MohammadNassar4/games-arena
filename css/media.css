@@ -1,20 +1,36 @@
 /*? sm */
 @media (min-width: 576px) {
 
+  .fs-sm-14 {
+    font-size: .875rem !important;
+  }
+
+  .fs-sm-15 {
+    font-size: .9375rem !important;
+  }
+
   .fs-sm-16 {
     font-size: 1rem !important;
+  }
+
+  .fs-sm-17 {
+    font-size: 1.0625rem !important;
   }
 
   .fs-sm-19 {
     font-size: 1.1875rem;
   }
-  
-    .fs-sm-20 {
-      font-size: 1.25rem;
-    }
+
+  .fs-sm-20 {
+    font-size: 1.25rem;
+  }
 
   .fs-sm-48 {
     font-size: 3rem !important;
+  }
+
+  .p-sm-30px {
+    padding: 1.875rem !important;
   }
 
   .pt-sm-60 {
@@ -25,18 +41,33 @@
     height: calc(var(--spacing) * 75);
   }
 
-    .team {
-      .member {
-        height: 300px;
+  .team {
+    .member {
+      height: 300px;
+    }
+  }
+
+  .contact {
+    padding-block: 90px;
+
+    form {
+
+      .input {
+        padding: .75rem 1rem;
       }
     }
+  }
+
+  footer {
+    padding-block: 45px;
+  }
 }
 
 /*? md */
 @media (min-width: 768px) {
 
   .fs-md-16 {
-    font-size: 1rem;
+    font-size: 1rem !important;
   }
 
   .fs-md-18 {
@@ -45,6 +76,10 @@
 
   .fs-md-20 {
     font-size: 1.25rem !important;
+  }
+
+  .p-md-32 {
+    padding: 2rem !important;
   }
 
   .pt-md-96 {
@@ -75,11 +110,27 @@
     height: 96px;
   }
 
-            .team {
-              .member {
-                height: 320px;
-              }
-            }
+  .team {
+    .member {
+      height: 320px;
+    }
+  }
+
+  .contact {
+    padding-block: 96px;
+
+    .join {
+
+      .icon {
+        width: 48px;
+        height: 48px;
+      }
+    }
+  }
+
+  footer {
+    padding-block: 64px;
+  }
 }
 
 /*? lg */
